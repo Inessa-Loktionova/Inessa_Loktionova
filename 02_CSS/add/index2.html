@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
         .navigation{
             width: 15em;
-            background-color: #ccc;
-            float: left;
+            background-color: #ccc; 
+            margin-bottom: 00.2em;           
         }
         .article{
             background-color: #aaa;
             white-space: pre;
-            margin-bottom: 0.2em;
-            margin-left: 15em;
+            margin-bottom: 0.2em;           
         }
         .footer{
             background-color: #aaa;
+            flex: 100%;
         }
         img{
             width: 100px;
             height: 100px;
             float: right;
-        }
-        .wrap{
-            background-color: #ccc;            
-        }
+        }       
         .clear{
             clear: both;
         }
+        .wrap{            
+            flex-direction: column;
+            flex: 1;
+        }
+       
     </style>
 </head>
 <body>
-<div class="wrap">   
     <div class="navigation">
         <strong>Блок навигации</strong>
         <ul>
@@ -42,6 +47,7 @@
             <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью.</li>
         </ul>
     </div>
+    <div class="wrap">
     <div class="article" >
         <strong>Статья 1</strong>
         
@@ -50,6 +56,7 @@
 Должен присутствовать цвет фона
 Во всех статьях сделайте отступ снизу от соседей 2em
     </div>   
+    
     <div class="article">
         <strong>Статья 2</strong>
 
@@ -60,8 +67,10 @@
 Картинка втавлена при помощи тега.      
         <img src="Email.png">
         <div class="clear"></div>
-    </div>    
-</div> 
+    </div>
+</div>
+    
+
     <div class="footer">Нижний блок</div>
     
 </body>
