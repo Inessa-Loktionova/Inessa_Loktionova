@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .border1{            
+            padding: 2em;
+            margin: 2em;
+            background-image: url(img/b-l.gif), url(img/b-r.gif), url(img/t-l.gif), url(img/t-r.gif), url(img/b.gif), url(img/l.gif), url(img/t.gif), url(img/r.gif); 
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-y, repeat-x, repeat-y;
+            background-position: bottom left, bottom right, top left, top right, bottom, left, top, right;
+        }
+        .border2{
+            padding: 4em;
+            margin: 2em;
+            background: url(img/l-b.png) no-repeat bottom left,
+            url(img/l-t.png)no-repeat top left,
+            url(img/r-b.png) no-repeat bottom right,
+            url(img/r-t.png) no-repeat top right,
+            url(img/b.png) repeat-x bottom,
+            url(img/l.png) repeat-y left,
+            url(img/r.png) repeat-y right,
+            url(img/t.png) repeat-x top;        
+        }
+        .border4{
+            border: solid;
+            padding: 4em;
+            margin: 2em;
+            border-image: url(img/ramka.png) 100 / 100px stretch;            
+        }
+    </style>
+</head>
+<body>
+    <div class="border1">Lorem ipsum urna odio risus molestie eget pharetra duis rutrum, porta ligula eget eros: diam vitae — integer. Curabitur sit lorem rutrum commodo sagittis: sed odio massa lectus urna fusce bibendum vulputate, quam vulputate urna. Eros auctor enim eget congue magna pharetra, amet — congue eget, eu lorem.</div>
+    <div class="border2">Lorem ipsum urna odio risus molestie eget pharetra duis rutrum, porta ligula eget eros: diam vitae — integer. Curabitur sit lorem rutrum commodo sagittis: sed odio massa lectus urna fusce bibendum vulputate, quam vulputate urna. Eros auctor enim eget congue magna pharetra, amet — congue eget, eu lorem.</div>
+    <div style="background: url(img/t.gif) repeat-x top;">
+        <div style="background: url(img/b.gif) repeat-x bottom;">
+            <div style="background: url(img/r.gif) repeat-y right;">
+                <div style="background: url(img/l.gif) repeat-y left;">
+                    <div style="background: url(img/b-r.gif) no-repeat bottom right;">
+                        <div style="background: url(img/t-l.gif) no-repeat top left;">
+                            <div style="background: url(img/t-r.gif) no-repeat top right;">
+                                <div style="background: url(img/b-l.gif) no-repeat bottom left;">
+                                    <div style="padding: 2em;">
+                                        Lorem ipsum urna odio risus molestie eget pharetra duis rutrum, porta ligula eget eros: diam vitae — integer. Curabitur sit lorem rutrum commodo sagittis: sed odio massa lectus urna fusce bibendum vulputate, quam vulputate urna. Eros auctor enim eget congue magna pharetra, amet — congue eget, eu lorem.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border4">Lorem ipsum urna odio risus molestie eget pharetra duis rutrum, porta ligula eget eros: diam vitae — integer. Curabitur sit lorem rutrum commodo sagittis: sed odio massa lectus urna fusce bibendum vulputate, quam vulputate urna. Eros auctor enim eget congue magna pharetra, amet — congue eget, eu lorem.</div>
+    
+</body>
+</html>
